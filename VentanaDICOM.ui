@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Visor DICOM</string>
+  </property>
+
+  <!-- Botón para cargar archivos -->
+  <widget class="QPushButton" name="botonCargarArchivos">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cargar DICOM</string>
+   </property>
+  </widget>
+
+  <!-- QLabel original tuyo -->
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>140</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aquí va la infromación</string>
+   </property>
+  </widget>
+
+  <!-- Layout donde se insertará el canvas -->
+  <widget class="QWidget" name="widgetImagen">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>560</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="layoutImagen"/>
+  </widget>
+
+  <!-- Labels para los metadatos -->
+  <widget class="QLabel" name="labelNombre">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>300</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nombre: -</string>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelID">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>410</y>
+     <width>300</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ID: -</string>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelEdad">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>300</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edad: -</string>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelRuta">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>470</y>
+     <width>500</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ruta: -</string>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelCorte">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>500</y>
+     <width>300</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Corte: -</string>
+   </property>
+  </widget>
+
+  <!-- Sliders para cortes -->
+  <widget class="QSlider" name="sliderZ">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>540</y>
+     <width>500</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+
+  <widget class="QSlider" name="sliderY">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>570</y>
+     <width>500</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+
+  <widget class="QSlider" name="sliderX">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>600</y>
+     <width>500</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
