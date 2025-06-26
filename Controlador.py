@@ -1,6 +1,5 @@
 from Modelo import *
 from Vista import *
-print hola
 class Controlador:
     def __init__(self, vista, modelo):
         self.vista = vista
